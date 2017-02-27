@@ -5,8 +5,8 @@ if [ $(id -u) != "0" ]; then
     echo -e "\033[31m Error: You must be root to run this script! \033[0m"
     exit 1
 fi
-wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
-rpm -ivh epel-release-7-8.noarch.rpm
+wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+rpm -ivh epel-release-7-9.noarch.rpm
 yum install -y libnet libnet-devel libpcap libpcap-devel gcc
 git clone https://github.com/snooda/net-speeder
 cd ~/net-speeder
